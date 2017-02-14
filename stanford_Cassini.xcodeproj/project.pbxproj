@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4A6C0CE81E53707900465E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C0CE71E53707900465E55 /* AppDelegate.swift */; };
-		4A6C0CEA1E53707A00465E55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C0CE91E53707A00465E55 /* ViewController.swift */; };
 		4A6C0CED1E53707A00465E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6C0CEB1E53707A00465E55 /* Main.storyboard */; };
 		4A6C0CF01E53707B00465E55 /* stanford_Cassini.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C0CEE1E53707B00465E55 /* stanford_Cassini.xcdatamodeld */; };
 		4A6C0CF21E53707B00465E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6C0CF11E53707B00465E55 /* Assets.xcassets */; };
 		4A6C0CF51E53707B00465E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6C0CF31E53707B00465E55 /* LaunchScreen.storyboard */; };
 		4A6C0D001E53707D00465E55 /* stanford_CassiniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C0CFF1E53707D00465E55 /* stanford_CassiniTests.swift */; };
 		4A6C0D0B1E53708000465E55 /* stanford_CassiniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C0D0A1E53708000465E55 /* stanford_CassiniUITests.swift */; };
+		4A6C0D191E53723C00465E55 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C0D181E53723C00465E55 /* ImageViewController.swift */; };
+		4A6C0D1B1E53746400465E55 /* urlBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C0D1A1E53746400465E55 /* urlBank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		4A6C0CE41E53707900465E55 /* stanford_Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stanford_Cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6C0CE71E53707900465E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A6C0CE91E53707A00465E55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A6C0CEC1E53707A00465E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A6C0CEF1E53707B00465E55 /* stanford_Cassini.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = stanford_Cassini.xcdatamodel; sourceTree = "<group>"; };
 		4A6C0CF11E53707B00465E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		4A6C0D061E53707E00465E55 /* stanford_CassiniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stanford_CassiniUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6C0D0A1E53708000465E55 /* stanford_CassiniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stanford_CassiniUITests.swift; sourceTree = "<group>"; };
 		4A6C0D0C1E53708200465E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6C0D181E53723C00465E55 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		4A6C0D1A1E53746400465E55 /* urlBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = urlBank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				4A6C0CE71E53707900465E55 /* AppDelegate.swift */,
-				4A6C0CE91E53707A00465E55 /* ViewController.swift */,
 				4A6C0CEB1E53707A00465E55 /* Main.storyboard */,
+				4A6C0D181E53723C00465E55 /* ImageViewController.swift */,
+				4A6C0D1A1E53746400465E55 /* urlBank.swift */,
 				4A6C0CF11E53707B00465E55 /* Assets.xcassets */,
 				4A6C0CF31E53707B00465E55 /* LaunchScreen.storyboard */,
 				4A6C0CF61E53707C00465E55 /* Info.plist */,
@@ -266,8 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A6C0CF01E53707B00465E55 /* stanford_Cassini.xcdatamodeld in Sources */,
-				4A6C0CEA1E53707A00465E55 /* ViewController.swift in Sources */,
+				4A6C0D191E53723C00465E55 /* ImageViewController.swift in Sources */,
 				4A6C0CE81E53707900465E55 /* AppDelegate.swift in Sources */,
+				4A6C0D1B1E53746400465E55 /* urlBank.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
