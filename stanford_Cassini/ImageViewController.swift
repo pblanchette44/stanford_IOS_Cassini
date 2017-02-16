@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImageViewController: UIViewController {
+class ImageViewController: UIViewController, UIScrollViewDelegate {
 
     var imageUrl: NSURL?{
         didSet{
@@ -17,7 +17,19 @@ class ImageViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var scrollView: UIScrollView!
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView
+    }
+    
+    @IBOutlet weak var scrollView: UIScrollView!{
+        didSet{
+            scrollView.contentSize = imageView.frame.size
+            scrollView.delegate = self
+            scrollView.minimumZoomScale = 0.03
+            
+        }
+    }
+    
     private func fetchImage(){
         if let url = imageUrl{
             if let imageData = NSData(contentsOf: url as URL){
@@ -42,7 +54,7 @@ class ImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.addSubview(imageView)
-        imageUrl = NSURL(string: urlBank.set1["test1"]!)
+        
     }
 
     override func didReceiveMemoryWarning() {

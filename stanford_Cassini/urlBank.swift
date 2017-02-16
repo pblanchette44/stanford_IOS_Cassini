@@ -14,7 +14,9 @@ struct urlBank{
     static let test1 = "https://www.newton.ac.uk/files/covers/968361.jpg"
     
     static let set1 = [
-        "test1" : "http://marcinignac.com/blog/fast-dynamic-geometry-in-webgl/fast-dynamic-geometry.jpg"
+        "Image1" : "http://marcinignac.com/blog/fast-dynamic-geometry-in-webgl/fast-dynamic-geometry.jpg",
+        "Image2" : "http://powellong.com/data/wallpapers/30/WDF_780952.jpg",
+        "Image3" : "http://wallpaper-gallery.net/images/random-image/random-image-19.png",
     ]
     
     static func imageNamed(imageName:String?) -> NSURL?{
